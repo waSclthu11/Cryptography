@@ -29,13 +29,19 @@ while x<len(key):
     keylist.append(y)
     x=x+1
 print(keylist)
-#Attempting to convert to encrypted list
+#Making the lists equal length
 if len(keylist)<len(textlist):
     x=0
     while len(keylist)<len(textlist):
         keylist.append(keylist[x])
         x=x+1
+if len(keylist)>len(textlist):
+    x=0
+    while len(keylist)>len(textlist):
+        textlist.append(textlist[x])
+        x=x+1
 print(keylist)
+print(textlist)
 encryptlist=[]
 
 
