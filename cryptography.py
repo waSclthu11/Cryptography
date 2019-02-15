@@ -55,5 +55,5 @@ x=0
 while x<len(encryptlist):
     codelist.append(associations[encryptlist[x]])
     x=x+1
-
+print(codelist)
 
