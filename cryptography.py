@@ -29,3 +29,12 @@ while x<len(key):
     keylist.append(y)
     x=x+1
 print(keylist)
+#Attempting to convert to encrypted list
+encryptlist=[]
+if len(keylist)>len(textlist):
+    beeg=len(keylist)
+else:
+    beeg=len(textlist)
+    
+
+
