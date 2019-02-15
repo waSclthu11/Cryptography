@@ -13,10 +13,19 @@ associations = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 .
 strlist=([associations[w:w+1] for w in range(0, 26, 1)]) # Converts to list
 text="test"
 key="hi"
+#Converting text to a numbered list
 textlist=[]
 x=0 
 while x<len(text):
     y=associations.find(text[x])
     textlist.append(y)
     x=x+1
-print (textlist)
+print(textlist)
+#Converting Key to a numbered list
+keylist=[]
+x=0 
+while x<len(key):
+    y=associations.find(key[x])
+    keylist.append(y)
+    x=x+1
+print(keylist)
