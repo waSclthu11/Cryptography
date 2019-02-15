@@ -42,6 +42,11 @@ if len(keylist)>len(textlist):
         x=x+1
 print(keylist)
 print(textlist)
+#Making Encrypted list
 encryptlist=[]
-
+x=0
+while x<len(keylist):
+    encryptlist.append(keylist[x]+textlist[x])
+    x=x+1
+print(encryptlist)
 
