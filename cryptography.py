@@ -83,7 +83,7 @@ while x<len(codelistI):
 decryptlist=[]
 x=0
 while x<len(codelistI):
-    y=codelistI[x]-keylist[x]
+    y=codelistII[x]-keylist[x]
     if y<0:
         y=y+84
     else:
