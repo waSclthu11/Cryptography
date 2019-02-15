@@ -2,7 +2,7 @@
 cryptography.py
 Author: waSclthu11
 Credit: <list sources used, if any>
-
+Yikes this is complicated
 Assignment:
 
 Write and submit a program that encrypts and decrypts user data.
@@ -30,11 +30,12 @@ while x<len(key):
     x=x+1
 print(keylist)
 #Attempting to convert to encrypted list
+if len(keylist)<len(textlist):
+    x=0
+    while len(keylist)<len(textlist):
+        keylist.append(keylist[x])
+        x=x+1
+
 encryptlist=[]
-if len(keylist)>len(textlist):
-    beeg=len(keylist)
-else:
-    beeg=len(textlist)
-print(beeg)
 
 
