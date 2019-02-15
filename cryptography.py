@@ -42,11 +42,18 @@ if len(keylist)>len(textlist):
         x=x+1
 print(keylist)
 print(textlist)
-#Making Encrypted list
+#Making Encrypted number list
 encryptlist=[]
 x=0
 while x<len(keylist):
     encryptlist.append(keylist[x]+textlist[x])
     x=x+1
 print(encryptlist)
+#Making encrypted character list
+codelist=[]
+x=0
+while x<len(encryptlist):
+    codelist.append(associations[encryptlist[x]])
+    x=x+1
+
 
