@@ -72,8 +72,7 @@ if len(keylist)>len(codelistI):
     while len(keylist)>len(codelistI):
         codelistI.append(codelistI[x])
         x=x+1
-print(codelistI)
-print(keylist)
+
 codelistII=[]
 x=0 
 while x<len(codelistI):
@@ -91,4 +90,12 @@ while x<len(codelistI):
     decryptlist.append(y)
     x=x+1
 print(decryptlist)
+decryptlistI=[]
+x=0 
+while x<len(decryptlist):
+    y=associations[decryptlist[x]]
+    decryptlistI.append(y)
+    x=x+1
+print(decryptlistI)
+
 
