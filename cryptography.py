@@ -1,6 +1,6 @@
 """
 cryptography.py
-Author: <your name here>
+Author: waSclthu11
 Credit: <list sources used, if any>
 
 Assignment:
