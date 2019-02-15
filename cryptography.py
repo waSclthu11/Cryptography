@@ -10,7 +10,9 @@ Write and submit a program that encrypts and decrypts user data.
 See the detailed requirements at https://github.com/HHS-IntroProgramming/Cryptography/blob/master/README.md
 """
 associations = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 .,:;'\"/\\<>(){}[]-=_+?!"
-strlist=([associations[w:w+1] for w in range(0, 26, 1)]) # Converts to list
+enter=input(str(("Enter e to encrypt, d to decrypt, or q to quit: "))
+if (enter == "e"):
+    print()
 text="test"
 key="hi"
 codelistI=['A', 'm', 'z', 'B']
