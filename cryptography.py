@@ -35,7 +35,7 @@ if len(keylist)<len(textlist):
     while len(keylist)<len(textlist):
         keylist.append(keylist[x])
         x=x+1
-
+print(keylist)
 encryptlist=[]
 
 
