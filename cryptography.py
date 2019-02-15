@@ -13,7 +13,7 @@ associations = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 .
 strlist=([associations[w:w+1] for w in range(0, 26, 1)]) # Converts to list
 text="test"
 key="hi"
-
+codelistI=['A', 'm', 'z', 'B']
 #Converting text to a numbered list
 textlist=[]
 x=0 
@@ -61,4 +61,29 @@ while x<len(encryptlist):
     codelist.append(associations[y])
     x=x+1
 print(codelist)
+#Decrypting message:
+if len(keylist)<len(codelistI):
+    x=0
+    while len(keylist)<len(codelistI):
+        keylist.append(keylist[x])
+        x=x+1
+if len(keylist)>len(codelistI):
+    x=0
+    while len(keylist)>len(codelistI):
+        codelistI.append(codelistI[x])
+        x=x+1
+print(codelistI)
+print(keylist)
+
+decryptlist=[]
+x=0
+while x<len(codelistI):
+    y=codelistI[x]-keylist[x]
+    if y<0:
+        y=y+84
+    else:
+        y=y
+    decryptlist.append(y)
+    x=x+1
+print(decryptlist)
 
