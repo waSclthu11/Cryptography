@@ -13,6 +13,7 @@ associations = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 .
 strlist=([associations[w:w+1] for w in range(0, 26, 1)]) # Converts to list
 text="test"
 key="hi"
+
 #Converting text to a numbered list
 textlist=[]
 x=0 
@@ -20,7 +21,7 @@ while x<len(text):
     y=associations.find(text[x])
     textlist.append(y)
     x=x+1
-print(textlist)
+
 #Converting Key to a numbered list
 keylist=[]
 x=0 
@@ -28,7 +29,7 @@ while x<len(key):
     y=associations.find(key[x])
     keylist.append(y)
     x=x+1
-print(keylist)
+
 #Making the lists equal length
 if len(keylist)<len(textlist):
     x=0
@@ -53,7 +54,11 @@ print(encryptlist)
 codelist=[]
 x=0
 while x<len(encryptlist):
-    codelist.append(associations[encryptlist[x]])
+    if encryptlist[x]>84:
+        y=encryptlist[x]-84
+    else:
+        y=encryptlist[x]
+    codelist.append(associations[y])
     x=x+1
 print(codelist)
 
