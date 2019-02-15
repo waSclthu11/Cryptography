@@ -96,7 +96,8 @@ while x<len(decryptlist):
     y=associations[decryptlist[x]]
     decryptlistI.append(y)
     x=x+1
-print(decryptlistI)
-decryptlistI=decryptlistI.join()
-print(decryptlistI)
+print
+
+decryption="".join(decryptlistI)
+print(decryption)
 
