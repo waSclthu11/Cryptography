@@ -1,7 +1,7 @@
 """
 cryptography.py
 Author: waSclthu11
-Credit: <list sources used, if any>
+Credit: the previous two challenges
 Yikes this is complicated
 Assignment:
 
@@ -14,8 +14,8 @@ quit=0
 while quit==0:
     enter=input(str(("Enter e to encrypt, d to decrypt, or q to quit: "))
     
-    if enter == "e":
-        text=input(str("Message: "))#Converting text to a numbered list
+    if enter=="e":
+        text=input(str("Message: "))
         key=input(str("Key: "))
         textlist=[]
         x=0 
