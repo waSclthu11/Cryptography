@@ -63,7 +63,7 @@ if (enter == "e"):
         codelist.append(associations[y])
         x=x+1
     print(codelist)
-if enter == "d":
+elif enter == "d":
     if len(keylist)<len(codelistI):
         x=0
         while len(keylist)<len(codelistI):
@@ -100,4 +100,5 @@ if enter == "d":
         x=x+1
     decryption="".join(decryptlistI)
     print(decryption)
-
+elif enter=="q":
+    print("cya l8ter nerd!")
