@@ -14,11 +14,9 @@ quit=f
 while quit==f:
     enter=input(str(("Enter e to encrypt, d to decrypt, or q to quit: "))
     
-    text="test"
-    key="hi"
-    
     if (enter == "e"):
-        #Converting text to a numbered list
+        text=input(str("Message: "))#Converting text to a numbered list
+        key=input(str("Key: "))
         textlist=[]
         x=0 
         while x<len(text):
