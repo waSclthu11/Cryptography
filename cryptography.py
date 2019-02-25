@@ -14,7 +14,7 @@ enter=input(str(("Enter e to encrypt, d to decrypt, or q to quit: "))
 
 text="test"
 key="hi"
-codelistI=['A', 'm', 'z', 'B']
+
 if (enter == "e"):
     #Converting text to a numbered list
     textlist=[]
@@ -63,7 +63,16 @@ if (enter == "e"):
         codelist.append(associations[y])
         x=x+1
     print(codelist)
+#Decrypting
 elif enter == "d":
+    codelistI=input(str("Message: "))
+    key=input(str("Key: "))
+    keylist=[]
+    x=0 
+    while x<len(key):
+        y=associations.find(key[x])
+        keylist.append(y)
+        x=x+1
     if len(keylist)<len(codelistI):
         x=0
         while len(keylist)<len(codelistI):
@@ -102,3 +111,5 @@ elif enter == "d":
     print(decryption)
 elif enter=="q":
     print("cya l8ter nerd!")
+else:
+    print("Did not understand command try again.")
