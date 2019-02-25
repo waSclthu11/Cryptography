@@ -23,7 +23,6 @@ while quit==0:
             y=associations.find(text[x])
             textlist.append(y)
             x=x+1
-    
         #Converting Key to a numbered list
         keylist=[]
         x=0 
@@ -31,7 +30,6 @@ while quit==0:
             y=associations.find(key[x])
             keylist.append(y)
             x=x+1
-    
         #Making the lists equal length
         if len(keylist)<len(textlist):
             x=0
@@ -79,13 +77,11 @@ while quit==0:
             while len(keylist)<len(codelistI):
                     keylist.append(keylist[x])
                 x=x+1
-        
         if len(keylist)>len(codelistI):
             x=0
             while len(keylist)>len(codelistI):
                 codelistI.append(codelistI[x])
                 x=x+1
-        
         codelistII=[]
         x=0 
         while x<len(codelistI):
