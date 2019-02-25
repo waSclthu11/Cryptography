@@ -41,8 +41,7 @@ while quit==0:
             while len(keylist)>len(textlist):
                 textlist.append(textlist[x])
                 x=x+1
-        print(keylist)
-        print(textlist)
+        
         #Making Encrypted number list
         encryptlist=[]
         x=0
@@ -60,6 +59,8 @@ while quit==0:
                 y=encryptlist[x]
             codelist.append(associations[y])
             x=x+1
+    
+        codelist="".join(codelist)
         print(codelist)
     #Decrypting
     elif enter == "d":
@@ -75,7 +76,7 @@ while quit==0:
         if len(keylist)<len(codelistI):
             x=0
             while len(keylist)<len(codelistI):
-                    keylist.append(keylist[x])
+                keylist.append(keylist[x])
                 x=x+1
         if len(keylist)>len(codelistI):
             x=0
