@@ -53,8 +53,8 @@ while quit==0:
         codelist=[]
         x=0
         while x<len(encryptlist):
-            if encryptlist[x]>84:
-                y=encryptlist[x]-84
+            if encryptlist[x]>len(associations):
+                y=encryptlist[x]-len(associations)
             else:
                 y=encryptlist[x]
             codelist.append(associations[y])
