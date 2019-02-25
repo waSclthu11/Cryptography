@@ -48,7 +48,7 @@ while quit==0:
         while x<len(keylist):
             encryptlist.append(keylist[x]+textlist[x])
             x=x+1
-        print(encryptlist)
+        
         #Making encrypted character list
         codelist=[]
         x=0
@@ -99,7 +99,7 @@ while quit==0:
                 y=y
             decryptlist.append(y)
             x=x+1
-        print(decryptlist)
+        
         decryptlistI=[]
         x=0 
         while x<len(decryptlist):
