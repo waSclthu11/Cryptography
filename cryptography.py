@@ -73,11 +73,13 @@ elif enter == "d":
         y=associations.find(key[x])
         keylist.append(y)
         x=x+1
+    
     if len(keylist)<len(codelistI):
         x=0
         while len(keylist)<len(codelistI):
             keylist.append(keylist[x])
             x=x+1
+    
     if len(keylist)>len(codelistI):
         x=0
         while len(keylist)>len(codelistI):
@@ -110,6 +112,6 @@ elif enter == "d":
     decryption="".join(decryptlistI)
     print(decryption)
 elif enter=="q":
-    print("cya l8ter nerd!")
+    print("Goodbye!")
 else:
-    print("Did not understand command try again.")
+    print("Did not understand command, try again.")
