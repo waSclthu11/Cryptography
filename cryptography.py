@@ -94,7 +94,7 @@ while quit==0:
         while x<len(codelistI):
             y=codelistII[x]-keylist[x]
             if y<0:
-                y=y+84
+                y=y+len(associations)
             else:
                 y=y
             decryptlist.append(y)
